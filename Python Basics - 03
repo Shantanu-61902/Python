@@ -1,0 +1,116 @@
+# Dictionary
+
+# thisdict = {
+#     "name": "johncena",
+#     "age": 34,
+#     "Wrestlemania main event" : True,
+#     "Finishers": ["AA","5 Knuckle Shuffle"]
+# }
+#print(thisdict["Wrestlemania main event"])
+#print(type(thisdict))
+#print(thisdict["Finishers"][0])
+
+# thisdict = dict(
+#     name = "johncena",
+#     age = 34,
+#     Wrestlemaniamainevent = True,
+#     Finishers = ["AA","5 Knuckle Shuffle"]
+# )
+# thisdict["Greetings"] = "HEllo QT"
+# #print(thisdict)
+# #print(thisdict.keys())
+# #print(thisdict.values())
+# thisdict.pop("age")
+# print(thisdict.items())
+
+myfamily = {
+    "CHILD1": { 
+    "NAME" :  "HENRY",
+    "YEAR" : 2005
+},
+    "CHILD2": { 
+    "NAME" :  "DORMAMU",
+    "YEAR" : 2018
+}
+}
+print(myfamily["CHILD1"]["NAME"])
+
+i = 1
+while i <= 10: 
+    #print("the value of i is :",i)
+    #print("THE Avengers")
+    
+    
+    print(2*i)
+    i += 1
+    #if i == 4 :
+    #   continue
+else:
+    print("Loop Exit")
+    
+    # fruits = ["Apple","banana","cherry"]
+# for fruit in fruits:
+#     print(fruit)
+
+# s = "HEllo"
+# for x in s:
+#     print(x)
+
+# for x in range(15):
+#     print(x)
+
+# thistuple = ("King","Kohli","delhi capitals")
+# print(type(thistuple))
+# for i in thistuple:
+#     print(i)
+
+
+# thistuple = ("kbc","tgsd","bigboss")
+
+# i = 0;
+# while i < len(thistuple):
+#     print(thistuple[i])
+#     i+=1
+name = {
+    "Fname" : "Undertaker",
+    "Lname" : "Batista"
+}
+# for n in name:
+#     print(n)
+#     print(name[n])
+for x,y in name.items():
+    print(x,y)
+
+   # def my_function(*fname):            #******* '*' will give you answer in tuple ********** jab unknown ho ki kitne arguements aare h
+#     print(fname)
+   
+# my_function("Shantanu","Mishra ");
+# my_function("Shan","lap ");
+# my_function("Shakshi","canary ");
+# my_function("Tanu","bdgt ");
+
+# def my_fun(**a):
+#     print(a)
+# print(type(my_fun))
+# my_fun(fname = "john",lname = "cena")
+# def my_func1(fruits):
+#     for x in fruits:
+#         print(x)
+
+# fruit = {"papaya", "guava", "leechi"}
+# my_func1(fruit);
+
+# def my_func2(num): 
+#     return(num * 2)
+
+# val = my_func2(10);
+# print(val)
+
+def myfun(n):
+    result = []
+    for x in n:
+        result.append(x * 2)
+    return result    
+num = [1,2,3,4,5,6,7,8,9,10]
+val = myfun(num);
+print(val)
