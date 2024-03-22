@@ -1,0 +1,57 @@
+# def Factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n * Factorial(n-1)
+    
+# factorial = Factorial(5)
+# print(factorial)   
+
+#lambda arguement : expression
+# x = lambda a,b : a * b
+# print(x(5,8))
+
+# def square(x):
+#     return x**2
+
+numbers = [1,2,3,4,5,6,7,8]
+#squared_no = list(map(lambda x : x*x,numbers))
+squared_no = list(filter(lambda x : x%2 == 0,numbers))
+print(squared_no)
+
+class MyAvengers:
+     #fname = "ShangChii"
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def __str__(self):
+        return f"{self.name} {self.age}"
+    def myfunction(self):
+        print("Hey Shantanu !! How's Life Going?"+"and ypur age is:"+self.name)
+obj = MyAvengers("Thor",530)
+obj.myfunction()
+obj2 = MyAvengers("JHONNTY",49)
+obj2.myfunction
+#print(obj.name)     
+#print(obj.age)     
+#print(type(obj))     
+
+
+class Person:
+    def __init__(self,fname,lname):
+        self.fname = fname;
+        self.lname = lname;
+
+    def printname(self):
+        print(self.fname,self.lname)
+class Student(Person):
+        def __init__(self, fname, lname,mname):
+             super().__init__(fname,lname)
+             self.mname = mname;#refering parent
+        def fullname(self):
+             print(self.fname,self.mname,self.lname)
+        pass
+
+obj = Student("HYDRA|","Gaming","Hhrishav")   
+obj.fullname() 
+obj.printname()
